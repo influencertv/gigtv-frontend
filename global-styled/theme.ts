@@ -1,4 +1,4 @@
-export const theme = {
+export const theme2 = {
   colors: {
     primary: '#0A0A0A',
     primaryLighter: '#1f1f1f',
@@ -20,7 +20,7 @@ export const theme = {
   bannerHeight: '35px',
 }
 
-export const theme2: Theme = {
+export const theme: Theme = {
   colors: {
     primary: '#3f51b5',
     primaryLighter: '#4254b8',
@@ -42,4 +42,4 @@ export const theme2: Theme = {
   bannerHeight: '35px',
 }
 
-export type Theme = typeof theme
+export type Theme = typeof theme2
