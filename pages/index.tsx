@@ -26,8 +26,8 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <NextSeo description="Influencer TV all the best breaking news!!!" />
-      <Layout title="INFLUENCER TV+">
+      <NextSeo description="Gig TV all the best breaking news!!!" />
+      <Layout title="Gig TV+">
         {isDesktop || <BreakingNews />}
         <BrandHeader />
         {isDesktop && <BreakingNews />}

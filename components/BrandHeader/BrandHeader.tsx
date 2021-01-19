@@ -9,7 +9,7 @@ const BrandHeader: React.FC = () => {
 
   return (
     <S.Wrapper>
-      <S.Title>InfluencerTV</S.Title>
+      <S.Title>GigTV</S.Title>
       {quickLinks && (
         <S.QuickLinks>
           <S.QuickListTitle>Quick links:</S.QuickListTitle>

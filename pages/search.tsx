@@ -7,7 +7,7 @@ import Search from '@/components/Search/Search'
 const SearchPage: NextPage = () => {
   return (
     <>
-      <NextSeo description="Influencer TV search for the best articles!!!" />
+      <NextSeo description="Gig TV search for the best articles!!!" />
       <Layout>
         <Search />
       </Layout>

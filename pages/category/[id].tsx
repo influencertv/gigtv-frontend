@@ -25,7 +25,7 @@ const CategoryPage: NextPage = () => {
         openGraph={{
           title: category.name,
           description: category.description,
-          url: `https://influencertvs.com/category/${categoryId}`,
+          url: `https://gigtv.tv/category/${categoryId}`,
           images: [
             {
               url: category.image?.url,
@@ -34,11 +34,11 @@ const CategoryPage: NextPage = () => {
               alt: category.image?.alternativeText,
             },
           ],
-          site_name: 'Influencer TV',
+          site_name: 'Gig TV',
         }}
         twitter={{
-          handle: '@influencertv',
-          site: '@influencertv',
+          handle: '@gigtv',
+          site: '@gigtv',
           cardType: 'summary_large_image',
         }}
       />

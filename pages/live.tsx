@@ -7,8 +7,8 @@ import LiveTV from '@/components/LiveTV/LiveTV'
 const Live: NextPage = () => {
   return (
     <>
-      <NextSeo description="Influencer TV all the best streaming content!!!" />
-      <Layout title="INFLUENCER TV+">
+      <NextSeo description="Gig TV all the best streaming content!!!" />
+      <Layout title="Gig TV+">
         <LiveTV />
       </Layout>
     </>

@@ -77,7 +77,7 @@ const Footer: React.FC = () => {
           ))}
         </S.FooterLinks>
       )}
-      <S.FooterLegal>&copy; InfluencerTV - All right reserved</S.FooterLegal>
+      <S.FooterLegal>&copy; GigTV - All right reserved</S.FooterLegal>
     </S.Footer>
   )
 }

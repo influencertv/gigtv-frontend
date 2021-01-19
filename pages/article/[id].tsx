@@ -27,7 +27,7 @@ const ArticlePage: NextPage = () => {
         openGraph={{
           title: article.title,
           description: article.excerpt,
-          url: `https://influencertvs.com/article/${article.id}`,
+          url: `https://gigtv.tv/article/${article.id}`,
           images: [
             {
               url: article.image?.url,
@@ -36,11 +36,11 @@ const ArticlePage: NextPage = () => {
               alt: article.image?.alternativeText,
             },
           ],
-          site_name: 'Influencer TV',
+          site_name: 'Gig TV',
         }}
         twitter={{
-          handle: '@influencertv',
-          site: '@influencertv',
+          handle: '@gigtv',
+          site: '@gigtv',
           cardType: 'summary_large_image',
         }}
       />

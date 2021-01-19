@@ -22,7 +22,7 @@ const Layout: React.FC<Props> = ({ children, title }) => {
             ? `${title} | LIVE TV, News, Entertainment + MORE`
             : 'LIVE TV, News, Entertainment + MORE'}
         </title>
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
           rel="stylesheet"
         />
@@ -45,15 +45,15 @@ const Layout: React.FC<Props> = ({ children, title }) => {
           data-ad-client="ca-pub-9598947394246056"
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        ></script>
+        ></script> */}
 
         {/* Plausible script */}
-        <script
+        {/* <script
           async
           defer
           data-domain="influencertvs.com"
           src="https://analytics.influencertvs.com/js/plausible.js"
-        ></script>
+        ></script> */}
       </Head>
 
       <S.Wrapper>
