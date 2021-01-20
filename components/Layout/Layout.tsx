@@ -47,13 +47,12 @@ const Layout: React.FC<Props> = ({ children, title }) => {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         ></script> */}
 
-        {/* Plausible script */}
-        {/* <script
+        <script
           async
           defer
-          data-domain="influencertvs.com"
+          data-domain="gigtv.tv"
           src="https://analytics.influencertvs.com/js/plausible.js"
-        ></script> */}
+        ></script>
       </Head>
 
       <S.Wrapper>
