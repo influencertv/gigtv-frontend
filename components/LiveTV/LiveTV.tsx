@@ -37,7 +37,7 @@ const LiveTV = () => {
             setTimeout(function() {
               var CONTENT_ID = "${data.liveTv.liveNow.videoId}"
               var myPlayer = dacast(CONTENT_ID, 'videoPlayer');
-            }, 1000)
+            }, 1500)
           `,
           }}
         ></script>
