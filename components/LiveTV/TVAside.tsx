@@ -17,13 +17,11 @@ const fetcher = () => fetch(url).then(res => res.json())
 
 const TVAside: React.FC<Props> = ({ liveNow, upNext }) => {
   const [currentTab, setCurrentTab] = useState<0 | 1>(1)
-  const { data: videos } = useQuery('uploaded-videos', fetcher)
-
-  console.log({ videos })
+  const { data: videos, isSuccess } = useQuery('uploaded-videos', fetcher)
 
   const tabs = [
     <div key={0}>
-      {videos &&
+      {isSuccess &&
         videos.map(video => (
           <S.VideoCard key={video.id}>
             <div>
