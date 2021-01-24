@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Ticker from 'react-ticker'
 import ReactPlayer from 'react-player/youtube'
 
 import TVAside from './TVAside'
@@ -21,8 +20,6 @@ const LiveTV = () => {
   if (error) {
     return null
   }
-
-  const news = data.liveTv.breakingNews.map(item => item.content)
 
   return (
     <>
@@ -54,17 +51,6 @@ const LiveTV = () => {
             ) : (
               <S.Player id="videoPlayer"></S.Player>
             )}
-            <Ticker speed={7}>
-              {() =>
-                news ? (
-                  <p style={{ whiteSpace: 'pre', fontSize: '18px' }}>
-                    {'   ' + news.join('   ')}
-                  </p>
-                ) : (
-                  <p style={{ visibility: 'hidden' }}>Placeholder</p>
-                )
-              }
-            </Ticker>
           </S.PlayerWrapper>
 
           <TVAside liveNow={data.liveTv.liveNow} upNext={data.liveTv.upNext} />

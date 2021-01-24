@@ -33,6 +33,7 @@ export const Article = styled.article`
     flex-direction: column;
     > *:first-of-type {
       margin-right: 0;
+      min-width: 320px;
     }
   }
 `
