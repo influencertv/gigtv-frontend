@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import ReactPlayer from 'react-player/youtube'
+import YoutubePlayer from 'react-player/youtube'
 
 import TVAside from './TVAside'
 import * as S from './styled'
@@ -23,34 +22,14 @@ const LiveTV = () => {
 
   return (
     <>
-      <Head>
-        <script
-          src={`https://player.dacast.com/js/player.js?contentId=${data.liveTv.liveNow.videoId}`}
-        ></script>
-        <script
-          defer
-          dangerouslySetInnerHTML={{
-            __html: `
-            setTimeout(function() {
-              var CONTENT_ID = "${data.liveTv.liveNow.videoId}"
-              var myPlayer = dacast(CONTENT_ID, 'videoPlayer');
-            }, 1500)
-          `,
-          }}
-        ></script>
-      </Head>
       <S.Wrapper>
         <S.TV>
           <S.PlayerWrapper>
-            {/* @ts-ignore */}
-            {data.liveTv.liveNow.youtubeVideoId ? (
-              <ReactPlayer
-                /* @ts-ignore */
+            <S.Player id="videoPlayer">
+              <YoutubePlayer
                 url={`https://www.youtube.com/watch?v=${data.liveTv.liveNow.youtubeVideoId}`}
               />
-            ) : (
-              <S.Player id="videoPlayer"></S.Player>
-            )}
+            </S.Player>
           </S.PlayerWrapper>
 
           <TVAside liveNow={data.liveTv.liveNow} upNext={data.liveTv.upNext} />

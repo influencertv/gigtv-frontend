@@ -8,6 +8,7 @@ export const LIVE_TV_QUERY = gql`
         title
         description
         videoId
+        youtubeVideoId
       }
       upNext {
         id

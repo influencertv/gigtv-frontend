@@ -186,7 +186,7 @@ export type Article = {
   excerpt?: Maybe<Scalars['String']>;
   article_type?: Maybe<ArticleType>;
   author: Scalars['String'];
-  posted_at: Scalars['DateTime'];
+  posted_at?: Maybe<Scalars['DateTime']>;
   comments?: Maybe<Array<Maybe<Comment>>>;
 };
 
@@ -301,7 +301,7 @@ export type ArticleInput = {
   article_type?: Maybe<Scalars['ID']>;
   comments?: Maybe<Array<Maybe<Scalars['ID']>>>;
   author: Scalars['String'];
-  posted_at: Scalars['DateTime'];
+  posted_at?: Maybe<Scalars['DateTime']>;
   created_by?: Maybe<Scalars['ID']>;
   updated_by?: Maybe<Scalars['ID']>;
 };
@@ -2410,7 +2410,7 @@ export type LiveTvQuery = (
     { __typename?: 'LiveTv' }
     & { liveNow?: Maybe<(
       { __typename?: 'ComponentLiveTvLiveNow' }
-      & Pick<ComponentLiveTvLiveNow, 'id' | 'title' | 'description' | 'videoId'>
+      & Pick<ComponentLiveTvLiveNow, 'id' | 'title' | 'description' | 'videoId' | 'youtubeVideoId'>
     )>, upNext?: Maybe<Array<Maybe<(
       { __typename?: 'ComponentLiveTvUpNext' }
       & Pick<ComponentLiveTvUpNext, 'id' | 'title' | 'description' | 'datetime' | 'duration'>

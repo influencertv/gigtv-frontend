@@ -36,9 +36,15 @@ export const Player = styled.div`
   width: 100%;
   height: 70vh;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 0;
 
   ${mediaQueries.isMobile} {
     height: 35vh;
+    margin-top: 52px;
   }
 `
 

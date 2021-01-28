@@ -1,6 +1,6 @@
 export const API_URL =
   process.env.NODE_ENV === 'development'
-    ? 'https://admin.gigtv.tv'
+    ? 'http://localhost:1337'
     : 'https://admin.gigtv.tv'
 
 export const DESKTOP_VIEW = 1000
